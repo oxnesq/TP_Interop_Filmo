@@ -1,0 +1,206 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="films" type="filmsType">
+    <xs:key name="idKey">
+        <xs:selector xpath="acteurDescription" />
+        <xs:field xpath="@id" />
+    </xs:key>
+    <xs:keyref name="idKeyRef" refer="idKey">
+        <xs:selector xpath="film/acteurs/acteur" />
+        <xs:field xpath="@ref" />
+    </xs:keyref>
+</xs:element>
+
+<xs:complexType name="filmsType"  >
+    <xs:sequence>
+        <xs:element name="film" type="filmType" minOccurs="1" maxOccurs="unbounded" />
+        <xs:element name="acteurDescription" type="acteurDescripType" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="filmType"  >
+    <xs:sequence>
+        <xs:element name="titre" type="xs:string" />
+        <xs:element name="nationalite" type="xs:string" />
+        <xs:element name="exploitation" type="exploitType" />
+        <xs:element name="acteurs" type="acteursType" />
+        <xs:element name="realisateur" type="nomType" />
+        <xs:element name="genres" type="genresType" />
+        <xs:element name="duree" type="dureeType" />
+        <xs:element name="descriptif" type="descriptionType" />
+        <xs:element name="image" type="imageType"/>
+    </xs:sequence>
+    <xs:attribute name="anneeSortie" type="xs:positiveInteger" use="required"/>
+    <xs:attribute name="visa" type="xs:positiveInteger" use="required"/>
+</xs:complexType>
+
+
+<xs:complexType name="exploitType"  >
+    <xs:sequence>
+        <xs:element name="dateSortieSalle" type="dateSortieType"  />
+        <xs:element name="nbEntreeSalle" type="xs:positiveInteger"  />
+        <xs:element name="nbSalle" type="xs:positiveInteger"  />
+        <xs:element name="listePays" type="listePaysType" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="acteursType"  >
+    <xs:sequence>
+        <xs:element name="acteur" type="acteurType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="genresType"  >
+    <xs:sequence>
+        <xs:element name="genre" type="genreType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dateSortieType"  >
+    <xs:attribute name="jourSemaine" type="xs:string" use="required"/>
+    <xs:attribute name="jour" type="jourType" use="required"/>
+    <xs:attribute name="mois" type="xs:string" use="required"/>
+    <xs:attribute name="annee" type="xs:gYear" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="listePaysType"  >
+    <xs:sequence>
+        <xs:element name="pays" type="xs:string" minOccurs="1" maxOccurs="3"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="nomType"  >
+    <xs:attribute name="prenom" type="xs:string" use="required"/>
+    <xs:attribute name="nom" type="xs:string" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="acteurType"  >
+    <xs:simpleContent>
+        <xs:extension base="xs:string">
+            <xs:attribute name="ref" type="xs:positiveInteger" use="required"/>
+        </xs:extension>
+    </xs:simpleContent>
+</xs:complexType>
+
+<xs:simpleType name="jourType" >
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="1" />
+            <xs:maxInclusive value="31" />
+        </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="dureeType">
+    <xs:simpleContent>
+        <xs:extension base="xs:positiveInteger">
+            <xs:attribute name="unite" type="xs:string" use="required"/>
+        </xs:extension>
+    </xs:simpleContent>
+</xs:complexType>
+
+<xs:complexType name="imageType">
+    <xs:attribute name="ref" type="xs:string" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="descriptionType" mixed="true">
+    <xs:choice maxOccurs="unbounded">
+        <xs:element name="keyword" type="xs:string" />
+        <xs:element name="ev" type="xs:string" />
+        <xs:element name="personnage" type="xs:string" />
+    </xs:choice>
+</xs:complexType>
+
+<xs:complexType name="acteurDescripType">
+    <xs:sequence>
+        <xs:element name="nom" type="xs:string" />
+        <xs:element name="prenom" type="xs:string" />
+        <xs:element name="dateNaiss" type="xs:date" />
+        <xs:element name="lieuNaiss" type="xs:string" />
+        <xs:element name="sexe" type="sexeType" />
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:positiveInteger" use="required" />
+</xs:complexType>
+
+
+<xs:simpleType name="sexeType">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="H" />
+        <xs:enumeration value="F" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="genreType">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="action"  />
+        <xs:enumeration value="aventure" />
+        <xs:enumeration value="comedie"  />
+        <xs:enumeration value="fantaisie"  />
+        <xs:enumeration value="romance"  />
+        <xs:enumeration value="science-fiction"  />
+        <xs:enumeration value="drame"  />
+        <xs:enumeration value="animation"  />
+        <xs:enumeration value="thriller"  />
+        <xs:enumeration value="suspense"  />
+        <xs:enumeration value="comedie musicale" />
+        <xs:enumeration value="policier"  />
+        <xs:enumeration value="documentaire"  />
+        <xs:enumeration value="enfant"  />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="pays"> 
+    <xs:restriction base="xs:string"> 
+        <xs:enumeration value="Albanie"/> 
+        <xs:enumeration value="Allemagne"/> 
+        <xs:enumeration value="Andorre"/> 
+        <xs:enumeration value="Armenie"/> 
+        <xs:enumeration value="Autriche"/> 
+        <xs:enumeration value="Azerbaidjan"/> 
+        <xs:enumeration value="Belgique"/> 
+        <xs:enumeration value="Bielorussie"/> 
+        <xs:enumeration value="Bosnie-Herzegovine"/> 
+        <xs:enumeration value="Bulgarie"/> 
+        <xs:enumeration value="Chypre"/> 
+        <xs:enumeration value="Croatie"/> 
+        <xs:enumeration value="Danemark"/> 
+        <xs:enumeration value="Espagne"/> 
+        <xs:enumeration value="Estonie"/> 
+        <xs:enumeration value="Finlande"/> 
+        <xs:enumeration value="France"/> 
+        <xs:enumeration value="Georgie"/> 
+        <xs:enumeration value="Grece"/> 
+        <xs:enumeration value="Hongrie"/> 
+        <xs:enumeration value="Irlande"/> 
+        <xs:enumeration value="Islande"/> 
+        <xs:enumeration value="Italie"/> 
+        <xs:enumeration value="Kazakhstan"/> 
+        <xs:enumeration value="Kosovo"/> 
+        <xs:enumeration value="Lettonie"/> 
+        <xs:enumeration value="Liechtenstein"/> 
+        <xs:enumeration value="Lituanie"/> 
+        <xs:enumeration value="Luxembourg"/> 
+        <xs:enumeration value="Malte"/> 
+        <xs:enumeration value="Moldavie"/> 
+        <xs:enumeration value="Monaco"/> 
+        <xs:enumeration value="Montenegro"/> 
+        <xs:enumeration value="Norvege"/> 
+        <xs:enumeration value="Pays-Bas"/> 
+        <xs:enumeration value="Pologne"/> 
+        <xs:enumeration value="Portugal"/> 
+        <xs:enumeration value="Republique tcheque"/> 
+        <xs:enumeration value="Roumanie"/> 
+        <xs:enumeration value="Royaume-Uni"/> 
+        <xs:enumeration value="Russie"/> 
+        <xs:enumeration value="Saint-Marin"/> 
+        <xs:enumeration value="Serbie"/> 
+        <xs:enumeration value="Slovaquie"/> 
+        <xs:enumeration value="Slovenie"/> 
+        <xs:enumeration value="Suede"/> 
+        <xs:enumeration value="Suisse"/> 
+        <xs:enumeration value="Ukraine"/> 
+        <xs:enumeration value="Vatican"/> 
+    </xs:restriction> 
+</xs:simpleType>
+
+
+
+</xs:schema>

@@ -1,0 +1,41 @@
+<!ELEMENT films (film*, acteurDescription*)>
+<!ELEMENT film (titre, nationalite, exploitation,acteurs,realisateur,genres,duree,descriptif,image)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT nationalite (#PCDATA)>
+<!ELEMENT exploitation (dateSortieSalle,nbEntreeSalle,nbSalle,listePays?)>
+<!ELEMENT dateSortieSalle (#PCDATA)>
+<!ELEMENT nbEntreeSalle (#PCDATA)>
+<!ELEMENT nbSalle (#PCDATA)>
+<!ELEMENT listePays (pays?,pays?,pays?)>
+<!ELEMENT pays (#PCDATA)>
+<!ELEMENT acteurs (acteur)*>
+<!ELEMENT acteur (#PCDATA)>
+<!ELEMENT realisateur (#PCDATA)>
+<!ELEMENT genres (genre)*>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT duree (#PCDATA)>
+<!ELEMENT descriptif (#PCDATA | personnage | keyword | ev)*>
+<!ELEMENT personnage (#PCDATA)>
+<!ELEMENT keyword (#PCDATA)>
+<!ELEMENT ev (#PCDATA)>
+<!ELEMENT image (#PCDATA)>
+
+<!ELEMENT acteurDescription (nom, prenom, dateNaiss,lieuNaiss,sexe)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT dateNaiss (#PCDATA)>
+<!ELEMENT lieuNaiss (#PCDATA)>
+<!ELEMENT sexe (#PCDATA)>
+
+<!ATTLIST film anneeSortie CDATA #REQUIRED>
+<!ATTLIST film visa CDATA #REQUIRED>
+<!ATTLIST dateSortieSalle jourSemaine CDATA #REQUIRED>
+<!ATTLIST dateSortieSalle jour CDATA #REQUIRED>
+<!ATTLIST dateSortieSalle mois CDATA #REQUIRED>
+<!ATTLIST dateSortieSalle annee CDATA #REQUIRED>
+<!ATTLIST acteur ref CDATA #REQUIRED>
+<!ATTLIST realisateur prenom CDATA #REQUIRED>
+<!ATTLIST realisateur nom CDATA #REQUIRED>
+<!ATTLIST duree unite CDATA #FIXED "minutes">
+<!ATTLIST image ref CDATA #REQUIRED>
+<!ATTLIST acteurDescription id CDATA #REQUIRED>

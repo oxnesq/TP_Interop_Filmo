@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--DOCTYPE films  SYSTEM "filmographie3.dtd"-->
+
+<?xml-stylesheet href="filmographie.xsl" type="text/xsl" ?>
+
+<films xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filmographie_schemas.xml">
+    <film anneeSortie="2005" visa="114089">
+        <titre>King kong</titre>
+        <nationalite>americain</nationalite>
+        <exploitation>
+            <dateSortieSalle jourSemaine="mercredi" jour="14" mois="decembre" annee="2005"/>
+            <nbEntreeSalle>2838759</nbEntreeSalle>
+            <nbSalle>547</nbSalle>
+            <listePays>
+                <pays>Allemagne</pays>
+                <pays>Espagne</pays>
+                <pays>Italie</pays>
+            </listePays>
+        </exploitation>
+        <acteurs>
+            <acteur ref="1">Peter Jackson</acteur>
+            <acteur ref="2">Naomi Watts</acteur>
+            <acteur ref="3">Jack Black</acteur>
+            <acteur ref="4">Adrien Brody</acteur>
+        </acteurs>
+        <realisateur prenom="Peter" nom="Jackson"/>
+        <genres>
+            <genre>aventure</genre>
+            <genre>fantaisie</genre>
+            <genre>romance</genre>
+        </genres>
+        <duree unite="minutes">188</duree>
+        <descriptif>un gigantesque <personnage> gorille </personnage> capture sur une ile isolee et ramene a New York, ou <ev> s'echappe et provoque le chaos</ev>, tout en developpant une <ev>connexion tragique avec une femme</ev></descriptif>
+        <image ref="King kong.jpg"/>
+    </film>
+
+    <film anneeSortie="2005" visa="114090">
+        <titre>Le monde de narnia</titre>
+        <nationalite>britanniques</nationalite>
+        <exploitation>
+            <dateSortieSalle jourSemaine="mercredi" jour="21" mois="decembre" annee="2005"></dateSortieSalle>
+            <nbEntreeSalle>1813554</nbEntreeSalle>
+            <nbSalle>345</nbSalle>
+            <listePays>
+                <pays>Allemagne</pays>
+                <pays>Italie</pays>
+            </listePays>
+        </exploitation>
+        <acteurs>
+            <acteur ref="5">Georgie Henley</acteur> 
+            <acteur ref="6">Skandar Keynes</acteur>  
+            <acteur ref="7">Anna Popplewell</acteur> 
+        </acteurs>
+        <realisateur prenom="Andrew" nom="Adamson"/>
+        <genres>
+            <genre>action</genre>
+            <genre>comedie</genre>
+            <genre>aventure</genre>
+            <genre>drame</genre>
+            <genre>fantaisie</genre>
+        </genres>
+        <duree unite="minutes">140</duree>
+        <descriptif>un groupe d'enfants qui decouvrent <ev> passage vers un royaume magique</ev>, 
+            ou ils se <keyword>battent</keyword> aux cotes d'un lion legendaire pour vaincre une sorciere malefique et restaurer la <keyword>paix</keyword></descriptif>
+        <image ref="Le monde de narnia.jpg" />
+    </film>
+
+    <film anneeSortie="2015" visa="114092">
+        <titre>Vice Versa</titre>
+        <nationalite>americain</nationalite>
+        <exploitation>
+            <dateSortieSalle jourSemaine="mercredi" jour="17" mois="juin" annee="2015"></dateSortieSalle>
+            <nbEntreeSalle>8000000</nbEntreeSalle>
+            <nbSalle>2</nbSalle>
+            <listePays>
+                <pays>Espagne</pays>
+                <pays>Suisse</pays>
+                <pays>Italie</pays>
+            </listePays>
+        </exploitation>
+        <acteurs>
+            <acteur ref="8">Richard King</acteur> 
+            <acteur ref="9">Lewis Black</acteur> 
+            <acteur ref="10">Mindy Kailing</acteur> 
+        </acteurs>
+        <realisateur prenom="Pete" nom="Docter"/>
+        <genres>
+            <genre>animation</genre>
+            <genre>drame</genre>
+            <genre>action</genre>
+            <genre>fantaisie</genre>
+        </genres>
+        <duree unite="minutes">102</duree>
+        <descriptif>Un <ev>univers des emotions</ev> dans l'esprit d'une jeune fille, 
+            ou <personnage>Joie</personnage>, <personnage>Tritesse</personnage> et les autres emotions doivent <keyword>cooperer</keyword> 
+            pour l'aider a naviguer a travers un <ev>changement de vie difficile</ev></descriptif>
+        <image ref="Vice Versa.jpg" />
+</film>
+
+    <film anneeSortie="2015" visa="115091">
+        <titre>Divergente 2</titre>
+        <nationalite>canadien</nationalite>
+        <exploitation>
+            <dateSortieSalle jourSemaine="mercredi" jour="18" mois="mars" annee="2015"></dateSortieSalle>
+            <nbEntreeSalle>12000000000</nbEntreeSalle>
+            <nbSalle>44546342</nbSalle>
+            <listePays>
+                <pays>Norvege</pays>
+            </listePays>
+        </exploitation>
+        <acteurs>
+            <acteur ref="11">Theo James</acteur>
+            <acteur ref="12">Octavia Spencer</acteur>
+            <acteur ref="13">Shailene Woodley</acteur>
+        </acteurs>
+        <realisateur prenom="Robert" nom="Schwentke"/>
+        <genres>
+            <genre>science-fiction</genre>
+            <genre>drame</genre>
+            <genre>action</genre>
+            <genre>thriller</genre>
+        </genres>
+        <duree unite="minutes">300</duree>
+        <descriptif><personnage>Tris</personnage> et <personnage>Quatre</personnage> <keyword>fuient</keyword> les autorites et decouvrent les secrets caches derriere le <ev> systeme de factions </ev> qui regit leur <keyword>societe</keyword> ,
+             tout en luttant contre une nouvelle menace.</descriptif>
+        <image ref="Divergente 2.jpg" />
+    </film>
+
+    <film anneeSortie="2014" visa="114093">
+        <titre>Le labyrinthe</titre>
+        <nationalite>Britannique</nationalite>
+        <exploitation>
+            <dateSortieSalle jourSemaine="mercredi" jour="5" mois="janvier" annee="2014"></dateSortieSalle>
+            <nbEntreeSalle>5687903</nbEntreeSalle>
+            <nbSalle>3242454</nbSalle>
+            <listePays>
+                <pays>Danemark</pays>
+                <pays>Italie</pays>
+                <pays>Norvege</pays>
+            </listePays>
+        </exploitation>
+        <acteurs>
+            <acteur ref="14">Dylan Obrien</acteur>
+            <acteur ref="15">Kaya Scodelario</acteur>
+            <acteur ref="16">Thomas Brodie-Sangster</acteur> 
+        </acteurs>
+        <realisateur prenom="Wes" nom="Ball"/>
+        <genres>
+            <genre>science-fiction</genre>
+            <genre>suspense</genre>
+            <genre>action</genre>
+            <genre>aventure</genre>
+        </genres>
+        <duree unite="minutes">113</duree>
+        <descriptif>jeunes gens <keyword> pieges</keyword> dans un <ev> immense labyrinthe en mouvement </ev>, 
+            ou ils doivent s'unir pour <keyword> echapper</keyword> de ce lieu mysterieux et comprendre <ev> qui les y a enfermes</ev></descriptif>
+        <image ref="Le labyrinthe.jpg" />
+    </film>
+
+    <film anneeSortie="2020" visa="114191">
+        <titre>Love and monsters</titre>
+        <nationalite>britannique</nationalite>
+        <exploitation>
+            <dateSortieSalle jourSemaine="mercredi" jour="16" mois="octobre" annee="2020"></dateSortieSalle>
+            <nbEntreeSalle>6</nbEntreeSalle>
+            <nbSalle>432325</nbSalle>
+            <listePays>
+                <pays>Suisse</pays>
+                <pays>Albanie</pays>
+                <pays>Grece</pays>
+            </listePays>
+        </exploitation>
+        <acteurs>
+            <acteur ref="14">Dylan Obrien</acteur> 
+            <acteur ref="17">Jessica Henwick</acteur> 
+        </acteurs>
+        <realisateur prenom="Michael" nom="Matthews"/>
+        <genres>
+            <genre>romance</genre>
+            <genre>comedie</genre>
+            <genre>action</genre>
+            <genre>science-fiction</genre>
+        </genres>
+        <duree unite="minutes">108</duree>
+        <descriptif> Un jeune homme tente de <ev>survivre  dans un monde post-apocalyptique </ev> envahi par des monstres. Un expert lui enseigne comment les <keyword>combattre</keyword> ... </descriptif>
+        <image ref="Love and monsters.jpg" />
+    </film>
+
+    <film anneeSortie="2004" visa="114091">
+        <titre>Frere des ours</titre>
+        <nationalite>Americain</nationalite>
+        <exploitation>
+            <dateSortieSalle jourSemaine="mercredi" jour="28" mois="Janvier" annee="2004"></dateSortieSalle>
+            <nbEntreeSalle>54678</nbEntreeSalle>
+            <nbSalle>4314</nbSalle>
+            <listePays>
+                <pays>Norvege</pays>
+                <pays>Pays Bas</pays>
+                <pays>Italie</pays>
+            </listePays>
+        </exploitation>
+        <acteurs>
+            <acteur ref="18">Joaquin Phoenix</acteur>
+            <acteur ref="19">Jeremy Suarez</acteur> 
+            <acteur ref="20">Rick Moranis</acteur>
+        </acteurs>
+        <realisateur prenom="Bob" nom="Walker"/>
+        <genres>
+            <genre>comedie musicale</genre>
+            <genre>animation</genre>
+            <genre>action</genre>
+            <genre>drame</genre>
+        </genres>
+        <duree unite="minutes">233</duree>
+        <descriptif><personnage>Kenai</personnage>, <ev> un jeune homme transforme en ours</ev>, 
+            qui doit <ev> apprendre des lecons sur l'amour, la fraternite et le respect de la nature </ev>
+            en voyageant aux cotes d'un ourson nomme <personnage>Koda</personnage></descriptif>
+        <image ref="Love and monsters.jpg" />
+    </film>
+
+    <film anneeSortie="2015" visa="114091">
+        <titre>RRRrrrr !!!</titre>
+        <nationalite></nationalite>
+        <exploitation>
+            <dateSortieSalle jourSemaine="mercredi" jour="28" mois="Janvier" annee="2015"></dateSortieSalle>
+            <nbEntreeSalle>13</nbEntreeSalle>
+            <nbSalle>1</nbSalle>
+            <listePays>
+                <pays>Roumanie</pays>
+                <pays>Angleterre</pays>
+                <pays>Italie</pays>
+            </listePays>
+        </exploitation>
+        <acteurs>
+            <acteur ref="21">Mauricce Barthelemy</acteur> 
+            <acteur ref="22">Jean-Paul Rouve</acteur> 
+        </acteurs>
+        <realisateur prenom="Alain" nom="Chabat"/>
+        <genres>
+            <genre>policier</genre>
+            <genre>comedie</genre>
+            <genre>action</genre>
+            <genre>science-fiction</genre>
+        </genres>
+        <duree unite="minutes">150</duree>
+        <descriptif> Une <keyword> comedie prehistorique </keyword> sur l' <keyword>affrontement</keyword>  de deux <keyword>tribus</keyword>  : 
+            les Cheveux Sales contre les Cheveux Propres. 
+            L'enjeu de cette lutte acharnee : la quete du shampooing.  </descriptif>
+        <image ref="RRRrrr !!!.jpg" />
+    </film>
+
+    <film anneeSortie="2002" visa="114091">
+        <titre>asterix et obelix mission cleopatre</titre>
+        <nationalite>Francais</nationalite>
+        <exploitation>
+            <dateSortieSalle jourSemaine="mercredi" jour="30" mois="Janvier" annee="2002"></dateSortieSalle>
+            <nbEntreeSalle>4000</nbEntreeSalle>
+            <nbSalle>4</nbSalle>
+            <listePays>
+                <pays>Lithuanie</pays>
+                <pays>Lieschteinschein</pays>
+                <pays>Espagne</pays>
+            </listePays>
+        </exploitation>
+        <acteurs>
+            <acteur ref="23">Christian Clavier</acteur> 
+            <acteur ref="24">Jamel Debbouze</acteur> 
+        </acteurs>
+        <realisateur prenom="Alain" nom="Chabat"/>
+        <genres>
+            <genre>comedie</genre>
+            <genre>aventure</genre>
+            <genre>action</genre>
+            <genre>documentaire</genre>
+        </genres>
+        <duree unite="minutes">60</duree>
+        <descriptif> 
+           <personnage>Asterix</personnage>, <personnage>Obelix</personnage> et <personnage>Panoramix</personnage> 
+           <keyword>aident</keyword>  un architecte a <ev> construire un palais en un temps record </ev>pour <personnage>Cleopatre</personnage> , 
+           tout en <keyword>affrontant</keyword>  de nombreux obstacles et <keyword>ennemis</keyword> .
+  </descriptif>
+        <image ref="asterix et obelix mission cleopatre" />
+    </film>
+
+    <film anneeSortie="2012" visa="114091">
+        <titre>Sur la piste du Marsupilami</titre>
+        <nationalite>Francais</nationalite>
+        <exploitation>
+            <dateSortieSalle jourSemaine="mercredi" jour="4" mois="avril" annee="2012"></dateSortieSalle>
+            <nbEntreeSalle>899865</nbEntreeSalle>
+            <nbSalle>463</nbSalle>
+            <listePays>
+                <pays>Espagne</pays>
+                <pays>Danemark</pays>
+                <pays>Italie</pays>
+            </listePays>
+        </exploitation>
+        <acteurs>
+            <acteur ref="24">Jamel Debbouze</acteur> 
+            <acteur ref="25">Alain Chabat</acteur> 
+        </acteurs>
+        <realisateur prenom="Alain" nom="Chabat"/>
+        <genres>
+            <genre>aventure</genre>
+            <genre>comedie</genre>
+            <genre>action</genre>
+            <genre>enfant</genre>
+        </genres>
+        <duree unite="minutes">93</duree>
+        <descriptif>un journaliste et un guide excentrique qui partent a la <keyword>recherche</keyword>  de la <keyword>legendaire creature</keyword>  , 
+            le <personnage>Marsupilami</personnage> , 
+            dans la jungle palombienne, tout en dejouant un complot dangereux.</descriptif>
+        <image ref="Sur la piste du Marsupilami.jpg" />
+    </film>
+
+    <acteurDescription id="1">
+        <nom>Peter</nom>
+        <prenom>Jackkson</prenom>
+        <dateNaiss>1961-10-31</dateNaiss>
+        <lieuNaiss>Etats-Unis</lieuNaiss>
+        <sexe>H</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="2">
+        <nom>Naomi</nom>
+        <prenom>Watts</prenom>
+        <dateNaiss>1968-09-28</dateNaiss>
+        <lieuNaiss>Etats_Unis</lieuNaiss>
+        <sexe>F</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="3">
+        <nom>Jack</nom>
+        <prenom>Black</prenom>
+        <dateNaiss>1977-04-12</dateNaiss>
+        <lieuNaiss>Irlande</lieuNaiss>
+        <sexe>H</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="4">
+        <nom>Adrien</nom>
+        <prenom>Brody</prenom>
+        <dateNaiss>1989-09-24</dateNaiss>
+        <lieuNaiss>Angleterre</lieuNaiss>
+        <sexe>H</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="5">
+        <nom>Georgie</nom>
+        <prenom>Henley</prenom>
+        <dateNaiss>1955-12-24</dateNaiss>
+        <lieuNaiss>Italie</lieuNaiss>
+        <sexe>H</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="6">
+        <nom>Skandar</nom>
+        <prenom>Keynes</prenom>
+        <dateNaiss>1955-12-25</dateNaiss>
+        <lieuNaiss>Espagne</lieuNaiss>
+        <sexe>H</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="7">
+        <nom>Anna</nom>
+        <prenom>Popplewell</prenom>
+        <dateNaiss>1955-12-26</dateNaiss>
+        <lieuNaiss>France</lieuNaiss>
+        <sexe>F</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="8">
+        <nom>Richard</nom>
+        <prenom>King</prenom>
+        <dateNaiss>1955-12-27</dateNaiss>
+        <lieuNaiss>Norvege</lieuNaiss>
+        <sexe>H</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="9">
+        <nom>Lewis</nom>
+        <prenom>Black</prenom>
+        <dateNaiss>1962-02-04</dateNaiss>
+        <lieuNaiss>Norvege</lieuNaiss>
+        <sexe>H</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="10">
+        <nom>Mindy</nom>
+        <prenom>Kailing</prenom>
+        <dateNaiss>1962-02-07</dateNaiss>
+        <lieuNaiss>Belgique</lieuNaiss>
+        <sexe>F</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="11">
+        <nom>Theo</nom>
+        <prenom>James</prenom>
+        <dateNaiss>1998-02-11</dateNaiss>
+        <lieuNaiss>Canada</lieuNaiss>
+        <sexe>H</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="12">
+        <nom>Octavia</nom>
+        <prenom>Spencer</prenom>
+        <dateNaiss>1974-02-14</dateNaiss>
+        <lieuNaiss>France</lieuNaiss>
+        <sexe>H</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="13">
+        <nom>Shailene</nom>
+        <prenom>Woodley</prenom>
+        <dateNaiss>1974-02-17</dateNaiss>
+        <lieuNaiss>Espagne</lieuNaiss>
+        <sexe>H</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="14">
+        <nom>Dylan</nom>
+        <prenom>Obrien</prenom>
+        <dateNaiss>1997-02-20</dateNaiss>
+        <lieuNaiss>Angleterre</lieuNaiss>
+        <sexe>H</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="15">
+        <nom>Kaya</nom>
+        <prenom>Scodelario</prenom>
+        <dateNaiss>1997-03-04</dateNaiss>
+        <lieuNaiss>Italie</lieuNaiss>
+        <sexe>F</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="16">
+        <nom>Thomas</nom>
+        <prenom>Brodie-Sangster</prenom>
+        <dateNaiss>1997-03-05</dateNaiss>
+        <lieuNaiss>Italie</lieuNaiss>
+        <sexe>H</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="17">
+        <nom>Jessica</nom>
+        <prenom>Henwick</prenom>
+        <dateNaiss>1997-03-07</dateNaiss>
+        <lieuNaiss>Etats-Unis</lieuNaiss>
+        <sexe>F</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="18">
+        <nom>Joaquin</nom>
+        <prenom>Phoenix</prenom>
+        <dateNaiss>1997-03-10</dateNaiss>
+        <lieuNaiss>Espagne</lieuNaiss>
+        <sexe>H</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="19">
+        <nom>Jeremy</nom>
+        <prenom>Suarez</prenom>
+        <dateNaiss>1997-03-11</dateNaiss>
+        <lieuNaiss>Canada</lieuNaiss>
+        <sexe>H</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="20">
+        <nom>Rick</nom>
+        <prenom>Moranis</prenom>
+        <dateNaiss>1997-03-15</dateNaiss>
+        <lieuNaiss>France</lieuNaiss>
+        <sexe>H</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="21">
+        <nom>Mauricce</nom>
+        <prenom>Barthelemy</prenom>
+        <dateNaiss>1997-03-16</dateNaiss>
+        <lieuNaiss>Etats-Unis</lieuNaiss>
+        <sexe>F</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="22">
+        <nom>Jean-Paul</nom>
+        <prenom>Rouve</prenom>
+        <dateNaiss>1997-03-21</dateNaiss>
+        <lieuNaiss>Grece</lieuNaiss>
+        <sexe>H</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="23">
+        <nom>Christian</nom>
+        <prenom>Clavier</prenom>
+        <dateNaiss>1997-03-20</dateNaiss>
+        <lieuNaiss>Italie</lieuNaiss>
+        <sexe>H</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="24">
+        <nom>Jamel</nom>
+        <prenom>Debbouze</prenom>
+        <dateNaiss>1997-04-03</dateNaiss>
+        <lieuNaiss>France</lieuNaiss>
+        <sexe>H</sexe>
+    </acteurDescription>
+
+    <acteurDescription id="25">
+        <nom>Alain</nom>
+        <prenom>Chabat</prenom>
+        <dateNaiss>1967-06-05</dateNaiss>
+        <lieuNaiss>France</lieuNaiss>
+        <sexe>H</sexe>
+    </acteurDescription>
+
+</films>
